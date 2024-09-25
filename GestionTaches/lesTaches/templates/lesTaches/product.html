@@ -1,0 +1,12 @@
+{% extends 'lesTaches/base.html' %}
+{% block contenu %}
+    <h1>Produit {{ prdct.name }}</h1>
+
+    <h2>Caractéristiques</h2>
+    <ul>
+      <li>Prix HT : {{ prdct.price_ht }}</li>
+      <li>Prix TTC : {{ prdct.price_ttc }}</li>
+      <li>status : {{ prdct.status }}</li>
+      <li>date de création : {{ prdct.date_creation }}</li>
+    </ul>
+{% endblock %}
